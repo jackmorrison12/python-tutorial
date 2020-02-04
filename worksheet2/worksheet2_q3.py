@@ -30,17 +30,3 @@ for i in range (1,101):
         elif j == i-1:
             primes.append(i)
 print("Primes: ", primes)
-
-#  Question 5
-primes = []
-i = 2
-while len(primes) < 100:
-    for j in range (1,i):
-        if i % j == 0 and j != 1 and j != i:
-            i+= 1
-            break
-        elif j == i-1:
-            primes.append(i)
-            i += 1
-            break
-print("Primes: ", primes)
